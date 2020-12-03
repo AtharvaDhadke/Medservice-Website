@@ -1,0 +1,63 @@
+.testimonial {
+    &-block {
+        background: $white;
+        padding: 40px 30px;
+        border-radius: 6px;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        transition: all .5s ease-in-out;
+    }
+
+    &-block:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        transform: scale(1.05);
+    }
+
+    &-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    &-quote-icon {
+        position: absolute;
+        width: 90px;
+
+        /* center position*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .15;
+
+
+    }
+
+    &-content {
+        font-size: 1.35rem;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.35;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &-author {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: .775rem;
+        line-height: 1;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    &-designation {
+        margin-top: 0;
+        color: $grey;
+        font-size: .7rem;
+        line-height: 1;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+}

@@ -16,100 +16,239 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/images/logo.png" width="220">
-        <a href="#">Make an Appointment</a>
-        <nav>
-            <ul>
-                <li><a href="#our-beginning">Our Beginning</a></li>
-                <li><a href="#departments">Departments</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
+    <header class="header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img data-src="assets/images/logo.png" width="220" class="lazyload">
+                </div>
+                <div class="column-big">
+                    <div class="menu-container">
+                        <nav class="smooth-scroll">
+                            <ul class="menu-list">
+                                <li class="menu-list-item"><a href="#our-beginning" class="menu-list-item-link">Our Beginning</a></li>
+                                <li class="menu-list-item"><a href="#departments" class="menu-list-item-link">Departments</a></li>
+                                <li class="menu-list-item"><a href="#testimonials" class="menu-list-item-link">Testimonials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="column menu-container ">
+                    <a href="#" class="btn btn__blue">Make an Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header-icon">
+            <span class="mobile-header-icon-bar"></span>
+        </div>
+        <div class="mobile-menu" id="mobile-header">
+            <nav class="smooth-scroll">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-list-item"><a href="#our-beginning" class="mobile-menu-list-item-link">Our Beginning</a></li>
+                    <li class="mobile-menu-list-item"><a href="#departments" class="mobile-menu-list-item-link">Departments</a></li>
+                    <li class="mobile-menu-list-item"><a href="#testimonials" class="mobile-menu-list-item-link">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="large-hero">
-        <img src="assets/images/hero.jpg">
+        <picture>
+            <source srcset="assets/images/hero.jpg 1920w, assets/images/hero-hi-dpi-i.jpg 3840w" media="(min-width: 1200px)">
+            <source srcset="assets/images/hero-medium.jpg 1521w, assets/images/hero-medium-hi-dpi-i.jpg 3041w" media="(min-width: 576px)">
+            <img data-srcset="assets/images/hero-small.jpg 1300w, assets/images/hero-small-hi-dpi-i.jpg 2600w" alt="Doctor with patient doing MRI" class="lazyload">
+        </picture>
         <div class="large-hero__text-content">
             <h5 class="large-hero__strip-title">Our Clinic Provides</h5>
-            <div class="large-hero_text-content_text">
-                <h3 class="large-hero__subtitle">worst Quality</h3>
+            <div class="large-hero__text-content__text">
+                <h3 class="large-hero__subtitle">Best Quality</h3>
                 <h2 class="large-hero__title">Medical treatment for you and your family.</h2>
                 <ul class="large-hero__feature-list">
-                    <li class="large-hero_feature-list_item">Risus nec luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor sapien and luctus</li>
-                    <li class="large-hero_feature-list_item">Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit</li>
+                    <li class="large-hero__feature-list__item">Risus nec luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor sapien and luctus</li>
+                    <li class="large-hero__feature-list__item">Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit</li>
                 </ul>
                 <p><a href="#" class="btn btn__blue">Discover More</a></p>
             </div>
         </div>
     </div>
 
-    <div id="our-beginning">
-        <h3>Welcome to Medservice.</h3>
-        <h2>Complete medical solutions in one place.</h2>
-        <img src="assets/images/side-about-us.png" alt="about-image">
+    <div id="our-beginning" class="section pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="column pb-0 relative">
+                    <img data-src="assets/images/side-about-us.png" alt="about-image" class="side-img lazyload">
+                </div>
+                <div class="column pb-80">
+                    <div class="heading">
+                        <h3 class="heading-subtitle">Welcome to MedService.</h3>
+                        <h2 class="heading-title">Complete medical solutions in one place. <span class="heading-toggle">Here&rsquo;s how we got started&hellip;</span></h2>
+                    </div>
+                    <p class="text-justify">Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor lacinia cubilia curae integer congue leo metus, eu mollislorem primis in orci integer metus mollis faucibus. An enim nullam tempor sapien gravida donec pretium and ipsum porta justo integer at velna vitae auctor integer congue.</p>
+                    <p>DRandon Pexon, Head of Clinic</p>
+                    <img data-src="assets/images/signature.png" alt="signature-image" class="lazyload">
+                </div>
 
-        <h2>Here&rsquo;s how we got started&hellip;</h2>
-        <p>Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor lacinia cubilia curae integer congue leo metus, eu mollislorem primis in orci integer metus mollis faucibus. An enim nullam tempor sapien gravida donec pretium and ipsum porta justo integer at velna vitae auctor integer congue.</p>
-        <p>DRandon Pexon, Head of Clinic</p>
-        <img src="assets/images/signature.png" alt="signature-image">
+            </div>
+        </div>
     </div>
 
-    <div id="departments">
-        <h2>Our Departments</h2>
-        <p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p>
+    <div id="departments" class="section section-bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="column ">
+                    <div class="heading">
+                        <h2 class="heading-title text-center">Our Departments</h2>
+                        <p class="heading-description text-center">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p>
+                    </div>
 
-        <img src="assets/images/icons/pediatrics-blue.svg">
-        <h3>Pediatrics</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/pediatrics-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Pediatrics</h3>
+                    </div>
+                </div>
 
-        <img src="assets/images/icons/heart-blue.svg">
-        <h3>Cardiology</h3>
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/heart-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Cardiology</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/mri-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">MRI</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/brain-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Neurology</h3>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/haematology-white.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Haematology</h3>
+                    </div>
+                </div>
 
-        <img src="assets/images/icons/mri-blue.svg">
-        <h3>MRI</h3>
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/pulmonologist-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Pulmonologist</h3>
+                    </div>
+                </div>
 
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/ambulance-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Emergency Help</h3>
+                    </div>
+                </div>
 
-        <img src="assets/images/icons/brain-blue.svg">
-        <h3>Neurology</h3>
+                <div class="column">
+                    <div class="service-box">
+                        <img data-src="assets/images/icons/microscope-blue.svg" class="service-icon lazyload">
+                        <h3 class="service-title">Laboratory Services</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="counters" class="section section-bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="counter-block">
+                        <img data-src="assets/images/icons/heart-white.svg" alt="" class="counter-icon lazyload">
+                        <h2 class="counter-number">9,632</h2>
+                        <h4 class="counter-text">Happy Patients</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="counter-block">
+                        <img data-src="assets/images/icons/pediatrics-white.svg" alt="" class="counter-icon lazyload">
+                        <h2 class="counter-number">178</h2>
+                        <h4 class="counter-text">Qualified Doctors</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="counter-block">
+                        <img data-src="assets/images/icons/mri-white.svg" alt="" class="counter-icon lazyload">
+                        <h2 class="counter-number">864</h2>
+                        <h4 class="counter-text">Clinic Rooms</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="counter-block">
+                        <img data-src="assets/images/icons/ambulance-white.svg" alt="" class="counter-icon lazyload">
+                        <h2 class="counter-number">473</h2>
+                        <h4 class="counter-text">Local Partners</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO:  STATS  SECTION NEEDS TO  BE  ADDED -->
+    <div id="testimonials" class="section section-bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="heading">
+                        <h2 class="heading-title text-center">What Our Patients Say</h2>
+                        <p class="heading-description text-center">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="testimonial-block">
+                        <img data-src="assets/images/testimonial-users/1.jpg" class="testimonial-avatar lazyload">
+                        <div class="testimonial-quote-icon">
+                            <img data-src="assets/images/quote.png" alt="" class="lazyload">
+                        </div>
+                        <p class="testimonial-content">An augue cubilia laoreet undo magna at risus suscipit egestas magna an ipsum ligula vitae and purus ipsum primis</p>
+                        <h3 class="testimonial-author">Dan Hodges</h3>
+                        <h5 class="testimonial-designation">Patient - X</h5>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="testimonial-block">
+                        <img data-src="assets/images/testimonial-users/2.jpg" class="testimonial-avatar lazyload">
+                        <div class="testimonial-quote-icon">
+                            <img data-src="assets/images/quote.png" alt="" class="lazyload">
+                        </div>
+                        <p class="testimonial-content">Etiam sapien sem at sagittis congue an augue massa varius egestas a suscipit magna undo tempus aliquet porta vitae
+                        </p>
+                        <h3 class="testimonial-author">Alisa Milano</h3>
+                        <h5 class="testimonial-designation">Patient - Z</h5>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="testimonial-block">
+                        <img data-src="assets/images/testimonial-users/3.jpg" class="testimonial-avatar lazyload">
+                        <div class="testimonial-quote-icon">
+                            <img data-src="assets/images/quote.png" alt="" class="lazyload">
+                        </div>
+                        <p class="testimonial-content">Augue egestas volutpat egestas augue in cubilia laoreet magna suscipit luctus and dolor blandit vitae</p>
+                        <h3 class="testimonial-author">Alex Ross</h3>
+                        <h5 class="testimonial-designation">Patient - O</h5>
+                    </div>
+                </div>
 
-        <img src="assets/images/icons/haematology-blue.svg">
-        <h3>Haematology</h3>
-
-        <img src="assets/images/icons/pulmonologist-blue.svg">
-        <h3>Pulmonologist</h3>
-
-        <img src="assets/images/icons/ambulance-blue.svg">
-        <h3>Emergency Help</h3>
-
-        <img src="assets/images/icons/microscope-blue.svg">
-        <h3>Laboratory Services</h3>
+            </div>
+        </div>
     </div>
 
-    <div id="testimonials">
-
-        <h2>What Our Patients Say</h2>
-        <p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p>
-
-        <img src="assets/images/testimonial-users/1.jpg">
-        <p>&ldquo;An augue cubilia laoreet undo magna at risus suscipit egestas magna an ipsum ligula vitae and purus ipsum primis&rdquo;</p>
-        <h3>Dan Hodges</h3>
-        <h5>Patient - X</h5>
-
-        <img src="assets/images/testimonial-users/2.jpg">
-        <p>&ldquo;Etiam sapien sem at sagittis congue an augue massa varius egestas a suscipit magna undo tempus aliquet porta vitae
-            &rdquo;</p>
-        <h3>Alisa Milano</h3>
-        <h5>Patient - Z</h5>
-
-        <img src="assets/images/testimonial-users/3.jpg">
-        <p>&ldquo;Augue egestas volutpat egestas augue in cubilia laoreet magna suscipit luctus and dolor blandit vitae&rdquo;</p>
-        <h3>Alex Ross</h3>
-        <h5>Patient - O</h5>
-    </div>
-
-    <footer>
-        <p>Copyright &copy; 2020 MedService. All Rights Reserved. <a href="#">Make an Appointment</a></p>
+    <footer class="section section-sm section-bg-primary">
+        <p class="text-center">Copyright &copy; 2020 MedService. All Rights Reserved. <a href="#" class="btn btn__white">Make an Appointment</a></p>
     </footer>
 
     <script src="app.bundled.js"></script>

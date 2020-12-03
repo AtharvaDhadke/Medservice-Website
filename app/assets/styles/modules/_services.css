@@ -1,0 +1,40 @@
+.service {
+    &-box {
+        background-color: $white;
+        border: solid 1px #F5F5F5;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 50px 20px;
+        border-radius: 6px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+        }
+    }
+
+    &-icon {
+        width: 80px;
+        transition: all .3s ease-in-out;
+    }
+
+    &-box:hover &-icon {
+        transform: translateY(40px);
+    }
+
+    &-title {
+        letter-spacing: -.5px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 1.1875rem;
+        color: $darkBlue;
+        font-weight: 700;
+        transition: all .3s ease-in-out;
+    }
+
+    &-box:hover &-title {
+        transform: translateY(-110px);
+        color: white;
+    }
+}

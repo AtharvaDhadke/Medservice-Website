@@ -1,20 +1,28 @@
 .btn {
     display: inline-block;
-    font-size: 0.9375rem;
+    font-size: 0.8rem;
     line-height: 1;
     font-weight: 400;
-    letter-spacing: 0.25px;
-    padding: 12px 24px;
+    letter-spacing: .25px;
+    padding: 6px 12px;
     border: 2px solid transparent;
     border-radius: 6px;
     text-align: center;
 
-    &__blue {
-        color: #fff;
-        background-color: $blue;
-        border-color: $blue;
-
+    @mixin largeScreen {
+        padding: 12px 24px;
+        font-size: 0.9375rem;
     }
 
-    &__white {}
+    &__blue {
+        color: #FFF;
+        background-color: $blue;
+        border-color: $blue;
+    }
+
+    &__white {
+        color: $blue;
+        background-color: $white;
+        border-color: $white;
+    }
 }

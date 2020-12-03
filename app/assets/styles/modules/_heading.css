@@ -1,0 +1,33 @@
+.heading {
+    &-subtitle {
+        color: $blue;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        color: $darkBlue;
+        font-size: 2.7rem;
+        text-transform: capitalize;
+        margin-top: 0;
+    }
+
+    &-toggle {
+        display: none;
+
+        @mixin largeScreen {
+            display: inline;
+        }
+    }
+
+    &-description {
+        margin: 0 auto;
+        width: 250px;
+
+        @mixin extraLargeScreen {
+            width: 660px;
+        }
+    }
+}
