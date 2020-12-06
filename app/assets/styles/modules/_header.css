@@ -9,6 +9,7 @@
         position: sticky;
         top: 0;
         left: 0;
+       
     }
 
     &-logo {
@@ -156,4 +157,8 @@
             display: block;
         }
     }
+}
+
+.is-current-link {
+    color :$blue;
 }

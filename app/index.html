@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header-sticky">
+    <header class="header header-sticky">
         <div class="container">
             <div class="row">
                 <div class="column">
@@ -26,15 +25,15 @@
                     <div class="menu-container">
                         <nav class="smooth-scroll">
                             <ul class="menu-list">
-                                <li class="menu-list-item"><a href="#our-beginning" class="menu-list-item-link">Our Beginning</a></li>
-                                <li class="menu-list-item"><a href="#departments" class="menu-list-item-link">Departments</a></li>
-                                <li class="menu-list-item"><a href="#testimonials" class="menu-list-item-link">Testimonials</a></li>
+                                <li class="menu-list-item"><a href="#our-beginning" class="menu-list-item-link" id="our-beginning-link">Our Beginning</a></li>
+                                <li class="menu-list-item"><a href="#departments" class="menu-list-item-link" id="department-link">Departments</a></li>
+                                <li class="menu-list-item"><a href="#testimonials" class="menu-list-item-link" id="testimonial-link">Testimonials</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="column menu-container ">
-                    <a href="#" class="btn btn__blue">Make an Appointment</a>
+                <div class="column menu-container  ">
+                    <a href="#" class="btn btn__blue open-modal">Make an Appointment</a>
                 </div>
             </div>
         </div>
@@ -64,15 +63,15 @@
                 <h3 class="large-hero__subtitle">Best Quality</h3>
                 <h2 class="large-hero__title">Medical treatment for you and your family.</h2>
                 <ul class="large-hero__feature-list">
-                    <li class="large-hero__feature-list__item">Risus nec luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor sapien and luctus</li>
-                    <li class="large-hero__feature-list__item">Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit</li>
+                    <li class="large-hero_feature-list_item">Risus nec luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor sapien and luctus</li>
+                    <li class="large-hero_feature-list_item">Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit</li>
                 </ul>
                 <p><a href="#" class="btn btn__blue">Discover More</a></p>
             </div>
         </div>
     </div>
 
-    <div id="our-beginning" class="section pb-0">
+    <div id="our-beginning" class="section pb-0" data-matching-link="#our-beginning-link">
         <div class="container">
             <div class="row">
                 <div class="column pb-0 relative">
@@ -92,7 +91,7 @@
         </div>
     </div>
 
-    <div id="departments" class="section section-bg-light">
+    <div id="departments" class="section section-bg-light" data-matching-link="#department-link">
         <div class="container">
             <div class="row">
                 <div class="column ">
@@ -100,7 +99,7 @@
                         <h2 class="heading-title text-center">Our Departments</h2>
                         <p class="heading-description text-center">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p>
                     </div>
-
+                    
                 </div>
             </div>
             <div class="row">
@@ -130,34 +129,34 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="row">
                 <div class="column">
-                    <div class="service-box">
-                        <img data-src="assets/images/icons/haematology-white.svg" class="service-icon lazyload">
-                        <h3 class="service-title">Haematology</h3>
-                    </div>
+                   <div class="service-box">
+                       <img data-src="assets/images/icons/haematology-white.svg" class="service-icon lazyload">
+                    <h3 class="service-title">Haematology</h3>
+                   </div>
                 </div>
 
                 <div class="column">
-                    <div class="service-box">
-                        <img data-src="assets/images/icons/pulmonologist-blue.svg" class="service-icon lazyload">
-                        <h3 class="service-title">Pulmonologist</h3>
-                    </div>
+                   <div class="service-box">
+                       <img data-src="assets/images/icons/pulmonologist-blue.svg" class="service-icon lazyload">
+                    <h3 class="service-title">Pulmonologist</h3>
+                   </div>
                 </div>
 
                 <div class="column">
-                    <div class="service-box">
-                        <img data-src="assets/images/icons/ambulance-blue.svg" class="service-icon lazyload">
-                        <h3 class="service-title">Emergency Help</h3>
-                    </div>
+                   <div class="service-box">
+                       <img data-src="assets/images/icons/ambulance-blue.svg" class="service-icon lazyload">
+                    <h3 class="service-title">Emergency Help</h3>
+                   </div>
                 </div>
 
                 <div class="column">
-                    <div class="service-box">
-                        <img data-src="assets/images/icons/microscope-blue.svg" class="service-icon lazyload">
-                        <h3 class="service-title">Laboratory Services</h3>
-                    </div>
+                   <div class="service-box">
+                       <img data-src="assets/images/icons/microscope-blue.svg" class="service-icon lazyload">
+                    <h3 class="service-title">Laboratory Services</h3>
+                   </div>
                 </div>
             </div>
         </div>
@@ -196,8 +195,7 @@
             </div>
         </div>
     </div>
-    <!-- TODO:  STATS  SECTION NEEDS TO  BE  ADDED -->
-    <div id="testimonials" class="section section-bg-light">
+    <div id="testimonials" class="section section-bg-light" data-matching-link="#testimonial-link">
         <div class="container">
             <div class="row">
                 <div class="column">
@@ -223,19 +221,19 @@
                     <div class="testimonial-block">
                         <img data-src="assets/images/testimonial-users/2.jpg" class="testimonial-avatar lazyload">
                         <div class="testimonial-quote-icon">
-                            <img data-src="assets/images/quote.png" alt="" class="lazyload">
+                                <img data-src="assets/images/quote.png" alt="" class="lazyload">
                         </div>
                         <p class="testimonial-content">Etiam sapien sem at sagittis congue an augue massa varius egestas a suscipit magna undo tempus aliquet porta vitae
-                        </p>
+                            </p>
                         <h3 class="testimonial-author">Alisa Milano</h3>
-                        <h5 class="testimonial-designation">Patient - Z</h5>
+                        <h5 class="testimonial-designation">Patient - Z</h5> 
                     </div>
                 </div>
                 <div class="column">
                     <div class="testimonial-block">
                         <img data-src="assets/images/testimonial-users/3.jpg" class="testimonial-avatar lazyload">
                         <div class="testimonial-quote-icon">
-                            <img data-src="assets/images/quote.png" alt="" class="lazyload">
+                                <img data-src="assets/images/quote.png" alt="" class="lazyload">
                         </div>
                         <p class="testimonial-content">Augue egestas volutpat egestas augue in cubilia laoreet magna suscipit luctus and dolor blandit vitae</p>
                         <h3 class="testimonial-author">Alex Ross</h3>
@@ -248,8 +246,74 @@
     </div>
 
     <footer class="section section-sm section-bg-primary">
-        <p class="text-center">Copyright &copy; 2020 MedService. All Rights Reserved. <a href="#" class="btn btn__white">Make an Appointment</a></p>
+        <p class="text-center">Copyright &copy; 2020 MedService. All Rights Reserved. <a href="#" class="btn btn__white open-modal">Make an Appointment</a></p>
     </footer>
+
+    <!-- MODAL-->
+    <div class="modal">
+        <div class="modal-inner">
+            <div class="heading text-center">
+                <h2 class="heading-title ">Have a Question? Get In Touch</h2>
+                <p class="heading-description">Have a question? Want to book an appointment for yourself or your children? Give us a call or send an email to contact the MedService.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="contact-box">
+                            <h5 class="contact-box-title">General Information</h5>
+                            <div class="contact-box-address">
+                                201, Gaurav Plaza, <br>
+                                R. R. T. Road, <br>
+                                Mulund (W), Mumbai - 80 <br>
+                                Phone: <a href="tel: 022 25608781">2560 87 81/82</a>. <br>
+                                Email: <a href="mailto: contact@medservice.com">contact@medservice.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-big">
+                        <div class="row">
+                            <div class="column pb-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your First Name*">
+                                </div>
+                            </div>
+                            <div class="column pb-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Last Name*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column pb-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Phone Number*">
+                                </div>
+                            </div>
+                            <div class="column pb-0">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column pb-0">
+                                <div class="form-group">
+                                    <textarea rows="10" class="form-control" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <a href="" class="btn btn__blue">Send Your Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-close">X</div>
+    </div>
+    <!-- END OF MODAL-->
 
     <script src="app.bundled.js"></script>
 </body>

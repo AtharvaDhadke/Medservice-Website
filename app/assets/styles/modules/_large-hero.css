@@ -1,42 +1,38 @@
-.large-hero {
+.large-hero{
     position: relative;
-
-    &__title {
+    
+    &__title{
         font-size: 1.1rem;
         font-weight: 700;
         letter-spacing: 0.5px;
         margin-bottom: 10px;
         color: $darkBlue;
-
+        
         @mixin smallScreen {
             font-size: 1.45rem;
         }
-
         @mixin largeScreen {
             font-weight: 900;
             font-size: 1.8rem;
             margin-bottom: 20px;
             text-transform: uppercase;
         }
-
-        @mixin extraLargeScreen {
+        @mixin extraLargeScreen{
             font-size: 2.15rem;
         }
     }
-
-    &__text-content {
+    &__text-content{
         position: absolute;
         top: 47%;
         left: 5%;
         transform: translateY(-50%);
-
         @mixin largeScreen {
             top: 45%;
             left: 10%;
         }
     }
-
-    &__strip-title {
+    
+    &__strip-title{
         border-radius: 6px 6px 0 0;
         padding: 10px 20px;
         background-color: $blue;
@@ -47,25 +43,25 @@
         font-weight: 900;
         font-size: 0.7rem;
         margin-bottom: 0;
-
+        
         @mixin mediumScreen {
             padding: 20px 40px;
             font-size: 0.85rem;
         }
     }
 
-    &__text-content__text {
+    &__text-content__text{
         background-color: $white;
-        padding: 20px 10px;
+        padding: 20px  10px;
         border-radius: 0 6px 6px 6px;
         width: 50%;
-
+        
         @mixin largeScreen {
             padding: 35px 25px;
         }
     }
 
-    &__subtitle {
+    &__subtitle  {
         font-size: 1.1rem;
         line-height: 1;
         font-weight: 400;
@@ -74,16 +70,13 @@
         margin-bottom: 8px;
         margin-top: 0;
         color: $darkBlue;
-
         @mixin smallScreen {
             font-size: 1.3rem
         }
-
         @mixin mediumScreen {
             font-size: 1.55rem;
             margin-bottom: 15px;
         }
-
         @mixin largeScreen {
             font-size: 1.75rem;
         }
@@ -93,29 +86,26 @@
         list-style: circle;
         margin-left: -1.4rem;
         font-size: 0.7rem;
-
+        
         @mixin smallScreen {
             font-size: 0.8rem;
         }
-
         @mixin mediumScreen {
             font-size: 1rem;
         }
-
         @mixin largeScreen {
             font-size: 1.1rem;
         }
-
         &__item {
-            color: $grey;
+            color:  $grey;
             margin-top: 0px;
             margin-bottom: 8px;
             line-height: 1rem;
-
+            
             @mixin largeScreen {
                 line-height: 1.5rem;
             }
-
+            
         }
     }
 }

@@ -14,3 +14,7 @@
 @import "modules/_counter.css";
 @import "modules/_services.css";
 @import "modules/_testimonial.css";
+
+@import "modules/_contact-box.css";
+@import "modules/_form.css";
+@import "modules/_modal.css";

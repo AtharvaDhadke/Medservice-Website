@@ -1,0 +1,13 @@
+.contact-box {
+    &-title {
+        font-size: 1.1875rem;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: $darkBlue;
+    }
+    &-address {
+        font-size: 0.975rem;
+        line-height: 1.5;
+    }
+}
